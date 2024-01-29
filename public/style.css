@@ -1,0 +1,1343 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+
+body {
+    background-image: url(bodyimg.jpg);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    /* scroll-behavior: smooth; */
+}eart
+
+.main {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10%;
+    animation: fadeIn 1s linear;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+.header-section {
+    height: 11rem;
+    width: 100%;
+}
+
+#headerlogo {
+    width: 20rem;
+    height: auto;
+    opacity: 0.9;
+    top: 5%;
+    left: 5%;
+    filter: opacity(0.8);
+}
+
+
+input:focus {
+    outline: none;
+    border: 1px solid #ffffff22;
+}
+
+
+/* .content-section {
+    display: none;
+} */
+
+.eyebtn {
+    padding-top: 0rem;
+    padding-right: 0.3rem;
+    margin: -0.8rem;
+    margin-top: 0.4rem;
+    width: 1.8rem;
+    height: 2rem;
+    background-color: #282c34;
+    border: 1px solid #ffffff22;
+    border-radius: 0.4rem;
+    border-left: none;
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+    cursor: pointer;
+
+}
+
+.login-signup-container{
+    margin-top: 10rem;
+}
+
+.login-box {
+
+    margin: 0.5rem;
+    margin-left: 30%;
+    color: rgb(255, 255, 255);
+    width: 36rem;
+    height: 26rem;
+    border-style: double;
+    border: 1px solid #ffffff22;
+    background-color: #282c34;
+    background: linear-gradient(0deg, rgba(40, 44, 52, 1) 0%, rgba(17, 0, 32, .5) 100%);
+    box-shadow: 0 7px 20px 5px #00000088;
+    border-radius: 0.7rem;
+    animation: fadeIn 0.3s linear;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+
+        to {
+            opacity: 1;
+        }
+    }
+}
+.userfound-errormsg{
+    display: none;
+    align-content: center;
+    text-align: center;
+    animation: shake 0.2s ;
+}
+@keyframes shake {
+    0% {
+      margin-left: 0rem;
+    }
+    25% {
+      margin-left: 0.5rem;
+    }
+    75% {
+      margin-left: -0.5rem;
+    }
+    100% {
+      margin-left: 0rem;
+    }
+  }
+
+.signin-box {
+   
+    margin-top: 5rem;
+    margin: 0.5rem;
+    margin-left: 30%;
+    color: rgb(255, 255, 255);
+    width: 36rem;
+    height: 28rem;
+    border-style: double;
+    border: 1px solid #ffffff22;
+    background-color: #282c34;
+    background: linear-gradient(0deg, rgba(40, 44, 52, 1) 0%, rgba(17, 0, 32, .5) 100%);
+    box-shadow: 0 7px 20px 5px #00000088;
+    border-radius: 0.7rem;
+
+    animation: fadeIn 0.3s linear;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+
+.login-form {
+    align-content: center;
+    height: max-content;
+    margin: 2rem;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.login-input {
+    width: 20rem;
+    margin: 0.8rem;
+    color: white;
+    text-align: center;
+    height: 1.9rem;
+    background-color: #282c34;
+    border: 1px solid #ffffff22;
+    border-radius: 0.4rem;
+}
+
+.password-box {
+    margin-left: 2rem;
+    display: flex;
+}
+
+.password-input {
+    width: 18.3rem;
+    margin: 0.4rem;
+    color: white;
+    text-align: center;
+    height: 1.9rem;
+    background-color: #282c34;
+    border: 1px solid #ffffff22;
+    border-radius: 0.4rem;
+    border-right: none;
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+}
+
+.login-input::placeholder {
+    color: rgb(171, 171, 171);
+}
+
+.logout-Btn{
+    float: left;
+    margin-top: 0.3rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.3rem;
+    width: 7rem;
+    height: 2.5rem;
+    border: 1px solid rgb(10, 41, 150);
+    background: linear-gradient(90deg, rgba(2, 19, 29, 1) 0%, rgba(5, 19, 43, 1) 35%, rgba(2, 2, 29, 1) 100%);
+    text-align: center;
+    color: #fff;
+    border-radius: 5px 0 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+
+
+}
+.welcome-user{
+    float: right;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.3rem;
+    width: max-content;
+    height: 2.5rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px 0 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+.login-button {
+    margin-top: 1rem;
+    width: 10rem;
+    height: 2.3rem;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: #282c34;
+    border: 1px solid #ffffff22;
+    border-radius: 0.4rem;
+
+}
+
+.login-button:hover {
+    background: rgb(10, 41, 150);
+
+}
+
+.regboxLogin {
+    
+    display: flex;
+    margin-left: 23%;
+    margin-top: 3%;
+    margin-bottom: -24px;
+}
+
+.reglink-login {
+    margin-left: 2%;
+}
+
+.reglink-login:hover {
+    cursor: pointer;
+    color: rgb(59, 59, 234);
+}
+
+
+.search {
+
+    margin-left: 25%;
+    width: 50%;
+    position: relative;
+    display: flex;
+
+}
+
+#searching {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.searchTerm {
+    text-align: center;
+    width: 100%;
+    border: 1.5px solid rgb(10, 41, 150);
+    color: white;
+    border-right: none;
+    padding: 5px;
+    height: 25px;
+    border-radius: 5px 0 0 5px;
+    background: linear-gradient(90deg, rgba(2, 19, 29, 1) 0%, rgba(5, 19, 43, 1) 35%, rgba(2, 2, 29, 1) 100%);
+}
+
+
+.searchButton {
+    width: 40px;
+    height: 38px;
+    border: 0.5px solid rgb(10, 41, 150);
+    background: rgb(10, 41, 150);
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+
+.surprise-sort-container {
+    margin-top: 4rem;
+    display: flex;
+}
+
+.surprise {
+    width: 50%;
+}
+
+.surprise-button {
+    margin-top: 0.3rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.3rem;
+    width: 170px;
+    height: 36px;
+    border: 1px solid rgb(10, 41, 150);
+    background: linear-gradient(90deg, rgba(2, 19, 29, 1) 0%, rgba(5, 19, 43, 1) 35%, rgba(2, 2, 29, 1) 100%);
+    text-align: center;
+    color: #fff;
+    border-radius: 5px 0 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+
+.surprise-button:hover {
+    background: rgb(10, 41, 150);
+
+}
+
+/* 
+#surpriselogo {
+
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 0.5rem;
+} */
+
+.sort {
+
+    width: 50%;
+}
+
+#sortbylabel {
+    color: white;
+    font-size: 1rem;
+}
+
+.sort-selector {
+    margin-top: 0.3rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.3rem;
+    width: 15rem;
+    height: 2rem;
+    border: 1px solid rgb(10, 41, 150);
+    background: linear-gradient(90deg, rgba(2, 19, 29, 1) 0%, rgba(5, 19, 43, 1) 35%, rgba(2, 2, 29, 1) 100%);
+    text-align: center;
+    color: #fff;
+    border-radius: 5px 0 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.sort-selector:hover {
+    background: rgb(10, 41, 150);
+
+}
+
+.adv-search {
+    display: none;
+    animation: fadeIn 0.5s linear;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+.advsearch-btn,
+.hide-advsearch-btn {
+    display: block;
+    margin-top: 0.3rem;
+    margin-left: 38%;
+    margin-bottom: 2rem;
+    padding-bottom: 0.3rem;
+    width: 20rem;
+    height: 36px;
+    border: 1px solid rgb(10, 41, 150);
+    background: linear-gradient(90deg, rgba(2, 19, 29, 1) 0%, rgba(5, 19, 43, 1) 35%, rgba(2, 2, 29, 1) 100%);
+    text-align: center;
+    color: #fff;
+    border-radius: 5px 0 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.advancedsearch-container {
+    align-content: center;
+    background: linear-gradient(90deg, rgba(2, 19, 29, 1) 0%, rgba(5, 19, 43, 1) 35%, rgba(2, 2, 29, 1) 100%);
+    margin: 0.5rem;
+    color: rgb(255, 255, 255);
+    width: 90%;
+    height: 45rem;
+    border: 1px solid rgb(10, 41, 150);
+    border-radius: 0.8rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    box-shadow: 10px 15px 25px 0 black;
+    display: flex;
+}
+
+.adv-typeandweaknesscontainer {
+    width: 50%;
+    height: 90%;
+}
+
+.adv-typeandweaknesscontainer .typeandweakness-section {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+
+}
+
+.typeandweakness-section .type-box {
+    width: 100%;
+    display: flex;
+}
+
+.type-box .typeweakness-name {
+    margin-top: 0.3rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.3rem;
+    width: 50%;
+    margin-left: 10%;
+    border: 1px solid rgb(10, 41, 150);
+    text-align: center;
+    color: #fff;
+    border-radius: 5px 0 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+#dropdown {
+    margin-top: 0.3rem;
+    margin-bottom: 3rem;
+    padding-bottom: 0.3rem;
+    width: 15rem;
+    height: 2rem;
+    border: 1px solid rgb(10, 41, 150);
+    background: linear-gradient(90deg, rgba(2, 19, 29, 1) 0%, rgba(5, 19, 43, 1) 35%, rgba(2, 2, 29, 1) 100%);
+    text-align: center;
+    color: #fff;
+    border-radius: 5px 0 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#dragon {
+    background: linear-gradient(rgb(0, 136, 255) 50%, rgb(255, 89, 0) 50%);
+    ;
+}
+
+#bug {
+    background-color: green;
+}
+
+#fairy {
+    background-color: palevioletred;
+}
+
+#fire {
+    background-color: orange;
+}
+
+#ghost {
+    background-color: purple;
+}
+
+#ground {
+    background: linear-gradient(rgb(197, 197, 3) 50%, rgb(125, 125, 9) 50%);
+    color: black;
+
+}
+
+#normal {
+    background-color: rgb(200, 200, 200);
+    color: black;
+}
+
+#psychic {
+    background-color: rgb(124, 65, 75);
+}
+
+#steel {
+    background-color: grey;
+}
+
+#dark {
+    background-color: rgb(58, 58, 58);
+}
+
+#electric {
+    background-color: yellow;
+    color: black;
+}
+
+#fighting {
+    background-color: rgb(192, 128, 9);
+}
+
+#flying {
+    background: linear-gradient(rgb(101, 169, 215) 50%, grey 50%);
+
+}
+
+#grass {
+    background-color: rgb(47, 199, 47);
+}
+
+#ice {
+    background-color: skyblue;
+    color: black;
+}
+
+#poison {
+    background-color: lightseagreen;
+}
+
+#rock {
+    background-color: palegoldenrod;
+    color: black;
+}
+
+#water {
+    background-color: rgb(117, 205, 234);
+    color: black;
+}
+
+.heightselector,
+.weightselector {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+
+
+.minheight,
+.maxheight,
+.avgheight,
+.minWeight,
+.avgWeight,
+.maxWeight {
+    margin-bottom: 2rem;
+    padding: 3rem;
+    width: 50%;
+    margin-left: 10%;
+    border: 1px solid rgb(10, 41, 150);
+    text-align: center;
+    color: #fff;
+    border-radius: 5px 0 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+
+
+}
+
+
+.adv-resetbutton,
+.adv-searchbutton {
+    margin-top: 2.5rem;
+    margin-left: 0.9rem;
+    margin-bottom: 2rem;
+    width: 220px;
+    height: 36px;
+    border: 1px solid rgb(10, 41, 150);
+    background: linear-gradient(90deg, rgba(2, 19, 29, 1) 0%, rgba(5, 19, 43, 1) 35%, rgba(2, 2, 29, 1) 100%);
+    text-align: center;
+    color: #fff;
+    border-radius: 5px 0 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.adv-resetbutton:hover,
+.adv-searchbutton:hover {
+    background: rgb(10, 41, 150);
+}
+
+
+
+.type-box .type {
+    margin-top: 0.3rem;
+    margin-bottom: 2rem;
+    padding-top: 0.1rem;
+    width: 10%;
+    border: 1px solid rgb(10, 41, 150);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: #000000;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.type-box .weakness {
+    margin-top: 0.3rem;
+    margin-bottom: 2rem;
+    padding-top: 0.1rem;
+    width: 10%;
+    border: 1px solid rgb(10, 41, 150);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: #000000;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.adv-secondbox {
+    width: 50%;
+
+
+}
+
+
+.pokemon-section {
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    justify-content: center;
+    padding-bottom: 3%;
+    margin-top: 2.5rem;
+}
+
+.pokemon {
+    margin: 0.5rem;
+    float: left;
+    color: rgb(255, 255, 255);
+    width: 19rem;
+    height: 23rem;
+    border-style: double;
+    border: 1px solid #ffffff22;
+    background-color: #282c34;
+    background: linear-gradient(0deg, rgba(40, 44, 52, 1) 0%, rgba(17, 0, 32, .5) 100%);
+    box-shadow: 0 7px 20px 5px #00000088;
+    border-radius: 0.7rem;
+    animation: fadeIn 1s linear;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.5;
+
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+.weightandheight {
+    display: flex;
+    margin-left: 15%;
+}
+
+.pokemon:hover {
+
+    color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 30px #3444d3, -10px -10px 30px #3444d3;
+    transform: translateY(-10px);
+    border: 1px solid #ffffff44;
+    box-shadow: 0 7px 50px 10px #000000aa;
+    transform: scale(1.025);
+    filter: brightness(1.4);
+}
+
+.pokemon:hover .heightPokemon {
+    display: block;
+    animation: fadeIn 0.5s linear;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+.pokemon:hover .pokemonimage {
+    width: 60%;
+    height: 55%;
+
+
+
+    animation: wiggle 5s linear infinite;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: translate(0, 0)
+    }
+
+    1.78571% {
+        transform: translate(5px, 0)
+    }
+
+    3.57143% {
+        transform: translate(0, 0)
+    }
+
+    5.35714% {
+        transform: translate(5px, 0)
+    }
+
+    7.14286% {
+        transform: translate(0, 0)
+    }
+
+    8.92857% {
+        transform: translate(5px, 0)
+    }
+
+    10.71429% {
+        transform: translate(0, 0)
+    }
+
+    100% {
+        transform: translate(0, 0)
+    }
+}
+
+.pokemonimage {
+    border-radius: 0.4rem;
+    align-content: center;
+    width: 55%;
+    height: 50%;
+    cursor: pointer;
+}
+
+.pokemonid {
+    padding-left: 0.4rem;
+    padding-right: 0.5rem;
+    text-align: right;
+    font-size: 90%;
+    margin: 0rem;
+    margin-left: 70%;
+    width: 2.4rem;
+    border: 1px solid #000000;
+    background: linear-gradient(90deg, rgba(2, 19, 29, 1) 0%, rgba(5, 19, 43, 1) 35%, rgba(2, 2, 29, 1) 100%);
+    color: #ffffff;
+    border-radius: 4px 0 4px 0;
+}
+
+.tittle {
+    font-size: 110%;
+    font-weight: bold;
+    margin: 0rem;
+}
+
+.type {
+    margin-top: 0rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    font-size: 91%;
+    overflow: auto;
+
+}
+
+.heightPokemon {
+    display: none;
+    margin-top: -0.4rem;
+    margin-bottom: 0.2rem;
+    padding-left: 1.4rem;
+    font-size: 91%;
+}
+
+
+
+
+
+.load-section {
+    display: flex;
+    margin-left: 33%;
+}
+
+.load-more {
+    margin-bottom: 2rem;
+    margin-left: -1.5rem;
+    width: 220px;
+    height: 36px;
+    border: 1px solid rgb(10, 41, 150);
+    background: linear-gradient(90deg, rgba(2, 19, 29, 1) 0%, rgba(5, 19, 43, 1) 35%, rgba(2, 2, 29, 1) 100%);
+    text-align: center;
+    color: #fff;
+    border-radius: 5px 0 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.load-more:hover {
+    background: rgb(10, 41, 150);
+}
+
+.collapse, .home-page {
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+    width: 220px;
+    height: 36px;
+    border: 1px solid rgb(10, 41, 150);
+    background: linear-gradient(90deg, rgba(2, 19, 29, 1) 0%, rgba(5, 19, 43, 1) 35%, rgba(2, 2, 29, 1) 100%);
+    text-align: center;
+    color: #fff;
+    border-radius: 5px 0 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.collapse:hover,.home-page:hover {
+    background: rgb(10, 41, 150);
+
+}
+
+.home-page{
+    display: none;
+}
+
+
+
+.error-container {
+    align-content: center;
+    background: linear-gradient(90deg, rgba(2, 19, 29, 1) 0%, rgba(5, 19, 43, 1) 35%, rgba(2, 2, 29, 1) 100%);
+
+    margin: 0.5rem;
+    color: rgb(255, 255, 255);
+    width: 200%;
+    height: 15rem;
+    border: 1px solid rgb(10, 41, 150);
+    ;
+    border-radius: 0.8rem;
+    margin-bottom: 3rem;
+    margin-left: 100%;
+    box-shadow: 10px 15px 25px 0 black;
+
+}
+
+.errorheader {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-weight: bolder;
+
+}
+
+.errorcontent {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-weight: bolder;
+
+}
+
+@media screen and (max-width: 1300px) {
+
+    .pokemon-section {
+        display: grid;
+        grid-template-columns: repeat(3, 35%);
+        justify-content: center;
+        margin-left: 5%;
+        padding-bottom: 3%;
+
+
+    }
+
+
+}
+
+@media screen and (max-width: 1123px) {
+
+    .pokemon-section {
+        display: grid;
+        grid-template-columns: repeat(2, 38%);
+        justify-content: center;
+        padding-bottom: 3%;
+        margin-left: 5%;
+
+
+    }
+
+    #headerlogo {
+        width: 18rem;
+    }
+}
+
+
+
+@media screen and (max-width: 882px) {
+
+    .pokemon-section {
+        display: grid;
+        grid-template-columns: repeat(1, 38%);
+        justify-content: center;
+        padding-bottom: 3%;
+        margin-left: 5%;
+
+
+    }
+
+    #headerlogo {
+        width: 16rem;
+    }
+}
+
+
+
+/* LKJHGFDSASDFGHJK */
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    margin-top: 16rem;
+    padding: 20px;
+    border-style: double;
+    border: 1px solid #ffffff22;
+    background-color: #282c34;
+    background: linear-gradient(0deg, rgba(40, 44, 52, 1) 0%, rgba(17, 0, 32, .5) 100%);
+    box-shadow: 0 7px 20px 5px #00000088;
+    border-radius: 0.7rem;
+    width: 30%;
+    height: 40%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 5%;
+    color: #fff;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+  .popup .close:hover {
+    color: #3444d3;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+
+
+  .popup .likedPokemon {
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  }
+
+  .popup .likedPokemon:hover{
+    color: white;
+   
+  }
+
+  .popup .likedPokemonshowButton{
+    margin-top: 18px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+  }
+  .popup .likedPokemonshowButton:hover{
+    background-color: black;
+
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+    .content{
+        margin-left: 2%;
+
+    }
+  }
+
+  h1 {
+    text-align: center;
+    font-family: Tahoma, Arial, sans-serif;
+    margin: 80px 0;
+  }
+  
+  
+  
+  .welcome-user {
+    font-size: 1em;
+    padding: 10px;
+    color: #fff;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  .welcome-user:hover {
+    background: rgb(10, 41, 150);
+  }
+
+.content{
+    margin-left: 2%;
+    position: fixed;
+    color: #fff;
+}
+
+
+.heart {
+    float: right;
+    margin: 20px;
+    
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(-45deg);
+  }
+  
+  .heart::before,
+  .heart::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+  }
+  
+  .heart::before {
+    top: -10px;
+    left: 0;
+  }
+  
+  .heart::after {
+    top: 0;
+    left: 10px;
+  }
+
+  .newColor {
+    background-color: red;
+  }
+
+  .newColor::before,
+.newColor::after {
+  background-color: red;
+}
+
+.likedPokemon-section{
+    display: none;
+    color: white;
+}
+
+
+.deleteIcon{
+    float: right;
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+.deleteIcon:hover{
+    color: blue;
+    cursor: pointer;
+    
+}
+
+.pokemon-attributes {
+    display: none;
+    margin-left: 25%;
+    margin-bottom: 5rem;
+    color: rgb(255, 255, 255);
+    width: 45rem;
+    height: 30rem;
+    border-style: double;
+    border: 1px solid #ffffff22;
+    background-color: #282c34;
+    background: linear-gradient(0deg, rgba(40, 44, 52, 1) 0%, rgba(17, 0, 32, .5) 100%);
+    box-shadow: 0 7px 20px 5px #00000088;
+    border-radius: 0.7rem;
+
+    animation: fadeIn 0.3s linear;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+.pokemonimg{
+    float: left;
+    margin: 3rem;
+    margin-left: 4.5rem;
+}
+
+.pokemon-details{
+    display: flex;
+}
+
+.info-section{
+    margin-left: 2rem;
+    text-align: center;
+}
+
+.header-pokemon{
+    margin-left: 18rem;
+   
+    display: flex;
+}
+.closePokemon{
+    margin-left: 16rem;
+    float: right;
+}
+.closePokemon:hover{
+    color: blue;
+    cursor: pointer;
+
+}
+
+.changePassword{
+   color: white;
+   
+}
+
+.changePassword:hover{
+    text-decoration: underline;
+    text-decoration-color: blue;
+ }
+
+ 
+
+
+.panel {
+    display: none;
+    margin-top: -8rem;
+    margin-left: 35%;
+    
+
+    width: 300px;
+
+    padding: 40px;
+    border-style: double;
+    border: 1px solid #ffffff22;
+    background-color: #282c34;
+    background: linear-gradient(0deg, rgba(40, 44, 52, 1) 0%, rgba(17, 0, 32, .5) 100%);
+    box-shadow: 0 7px 20px 5px #00000088;
+    border-radius: 0.7rem;
+  }
+  
+  
+  
+  .inputs__item {
+    padding-bottom: 40px;
+  }
+  
+  .inputs__label {
+    color: rgb(212, 212, 212);
+    display: block;
+  }
+  
+  .inputs__input {
+    border: none;
+    border-bottom: 1px solid #6B6C70;
+    background: #35363C;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font: 16px 'Helvetica Neue', Helvetica, sans-serif;
+    color: #A64C41;
+    
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  .inputs__item--new {
+    .inputs__label, 
+    .inputs__input {
+      color: #6498BB;
+    }
+  }
+  
+  .inputs__item--cta {
+    text-align: center;
+    padding-bottom: 0;
+    padding-top: 20px;
+  }
+  
+  
+  .btn {
+    border: none;
+    background: #A64C41;
+    color: #C8BDA0;
+    font-size: 20px;
+    border-radius: 3px;
+    padding: 12px 50px;
+    cursor: pointer;
+  }
+ 
+.searchaccount-box{
+
+        margin: 0.5rem;
+        margin-left: 30%;
+        color: rgb(255, 255, 255);
+        width: 36rem;
+        height: 20.5rem;
+        border-style: double;
+        border: 1px solid #ffffff22;
+        background-color: #282c34;
+        background: linear-gradient(0deg, rgba(40, 44, 52, 1) 0%, rgba(17, 0, 32, .5) 100%);
+        box-shadow: 0 7px 20px 5px #00000088;
+        border-radius: 0.7rem;
+        animation: fadeIn 0.3s linear;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+    
+            to {
+                opacity: 1;
+            }
+        }
+    }
+
+    .search-button{
+            margin-top: 1rem;
+            margin-left: 1rem;
+            width: 10rem;
+            height: 2.3rem;
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1rem;
+            background-color: #282c34;
+            border: 1px solid #ffffff22;
+            border-radius: 0.4rem;
+        
+        }
+        
+        .search-button:hover {
+            background: rgb(10, 41, 150);
+        
+        }
+
+
+.forgotPassword , .gobacktologin{
+    color: white;
+}
+
+.forgotPassword:hover , .gobacktologin:hover{
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.sendmail-box{
+    display: none;
+    margin: 0.5rem;
+    margin-left: 30%;
+    color: rgb(255, 255, 255);
+    width: 36rem;
+    height: 26rem;
+    border-style: double;
+    border: 1px solid #ffffff22;
+    background-color: #282c34;
+    background: linear-gradient(0deg, rgba(40, 44, 52, 1) 0%, rgba(17, 0, 32, .5) 100%);
+    box-shadow: 0 7px 20px 5px #00000088;
+    border-radius: 0.7rem;
+    animation: fadeIn 0.3s linear;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+.updatepassword-box{
+
+    margin: 0.5rem;
+    margin-left: 30%;
+    color: rgb(255, 255, 255);
+    width: 36rem;
+    height: 24rem;
+    border-style: double;
+    border: 1px solid #ffffff22;
+    background-color: #282c34;
+    background: linear-gradient(0deg, rgba(40, 44, 52, 1) 0%, rgba(17, 0, 32, .5) 100%);
+    box-shadow: 0 7px 20px 5px #00000088;
+    border-radius: 0.7rem;
+    animation: fadeIn 0.3s linear;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+
+        to {
+            opacity: 1;
+        }
+    }
+}

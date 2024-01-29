@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="pngegg.png">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header-section">
+            <img id="headerlogo" src="logo.png" alt="logo">
+
+            <a class="button welcome-user" href="#popup1">Welcome,</a>
+            <button class="logout-Btn">Log Out</button>
+
+        </div>
+        <div class="login-section"></div>
+        <div class="box">
+
+        </div>
+
+        <div class="content-section">
+
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <h2>User Details</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content cntntbox">
+                        <h3 class="user-name">Name:</h3>
+                        <h3 class="email-id">Email:</h3>
+                        
+                        <button class="likedPokemonshowButton" onclick="showlikedPokemon()">
+                            <a class="likedPokemon" href="#">Liked Pokemon</a>
+
+                        </button>
+                        <br>
+                        <!-- <a class="changePassword" href="#" onclick="changeUserPassword()">
+                            Change or reset your password?
+
+                        </a> -->
+                       
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class="contentsection-top">
+                <div class="search">
+                    <input type="text" class="searchTerm" id="myInput" placeholder="SEARCH">
+                    <button type="submit" class="searchButton">
+                        <img id="searching" src="searchicon.png" alt="s">
+                    </button>
+                </div>
+
+                <div class="surprise-sort-container">
+                    <div class="surprise">
+
+                        <button class="surprise-button">Surprise Me!</button>
+
+                    </div>
+
+                    <div class="sort">
+                        <form id="select">
+                            <label id="sortbylabel">Sort By : </label>
+
+                            <select name="sort-selector" class="sort-selector" onchange="sortSelector()">
+                                <option value="lowest">Lowest Number</option>
+                                <option value="highest">Highest Number</option>
+                                <option value="alphabetical">A-Z</option>
+                                <option value="reversealphabetical">Z-A</option>
+                            </select>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="advancedsearch-btn">
+                    <button class="advsearch-btn"> Show Advanced Search</button>
+                </div>
+                <div class="adv-search">
+                    <div class="advancedsearch-container">
+                        <div class="adv-secondbox">
+                            <div class="adv-ability">
+                                <h2>Ability</h2>
+                                <select id="dropdown"></select>
+                            </div>
+                            <div class="adv-height">
+                                <h2>height</h2>
+
+                                <div class="heightselector">
+                                    <span class="minheight resetAdv">Min</span>
+                                    <span class="avgheight resetAdv">Avg</span>
+                                    <span class="maxheight resetAdv">Max</span>
+                                </div>
+                            </div>
+                            <div class="adv-weight">
+                                <h2>Weight</h2>
+
+                                <div class="weightselector">
+                                    <span class="minWeight resetAdv">Min</span>
+                                    <span class="avgWeight resetAdv">Avg</span>
+                                    <span class="maxWeight resetAdv">Max</span>
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <button class="adv-resetbutton">Reset</button>
+                                <button class="adv-searchbutton">Search</button>
+
+                            </div>
+
+                        </div>
+                        <div class="adv-typeandweaknesscontainer">
+
+                            <h2>Type & Weakness</h2>
+                            <div class="typeandweakness-section">
+                                <div class="type-box">
+                                    <span class="typeweakness-name" id="bug">Bug</span>
+                                    <span class="type resetAdv " data-value="bug" id="typebug">T</span>
+                                    <span class="weakness resetAdv " data-value="Bug" id="weaknessbug">W</span>
+                                </div>
+                                <div class="type-box">
+                                    <span class="typeweakness-name" id="dragon">Dragon</span>
+                                    <span class="type resetAdv" data-value="dragon" id="typedragon">T</span>
+                                    <span class="weakness resetAdv " data-value="Dragon" id="weaknessdragon">W</span>
+                                </div>
+                                <div class="type-box">
+                                    <span class="typeweakness-name" id="fairy">Fairy</span>
+                                    <span class="type resetAdv" data-value="fairy" id="typefairy">T</span>
+                                    <span class="weakness resetAdv" data-value="Fairy" id="weaknessfairy">W</span>
+                                </div>
+                                <div class="type-box">
+                                    <span class="typeweakness-name" id="fire">Fire</span>
+                                    <span class="type resetAdv" data-value="fire" id="typefire">T</span>
+                                    <span class="weakness resetAdv" data-value="Fire" id="weaknessfire">W</span>
+                                </div>
+                                <div class="type-box">
+                                    <span class="typeweakness-name" id="ghost">Ghost</span>
+                                    <span class="type resetAdv" data-value="ghost" id="typeghost">T</span>
+                                    <span class="weakness resetAdv" data-value="Ghost" id="weaknessghost">W</span>
+                                </div>
+                                <div class="type-box">
+                                    <span class="typeweakness-name" id="ground">Ground</span>
+                                    <span class="type resetAdv" data-value="ground" id="typeground">T</span>
+                                    <span class="weakness resetAdv" data-value="Ground" id="weaknessground">W</span>
+                                </div>
+                                <div class="type-box">
+                                    <span class="typeweakness-name" id="normal">Normal</span>
+                                    <span class="type resetAdv" data-value="normal" id="typenormal">T</span>
+                                    <span class="weakness resetAdv" data-value="Normal" id="weaknessnormal">W</span>
+                                </div>
+
+                                <div class="type-box">
+                                    <span class="typeweakness-name" id="psychic">Psychic</span>
+                                    <span class="type resetAdv" data-value="psychic" id="typepsychic">T</span>
+                                    <span class="weakness resetAdv" data-value="Psychic" id="weaknesspsychic">W</span>
+                                </div>
+                                <div class="type-box">
+                                    <span class="typeweakness-name" id="steel">Steel</span>
+                                    <span class="type resetAdv" data-value="steel" id="typesteel">T</span>
+                                    <span class="weakness resetAdv" data-value="Steel" id="weaknesssteel">W</span>
+                                </div>
+                                <div class="type-box">
+                                    <span class="typeweakness-name" id="dark">Dark</span>
+                                    <span class="type resetAdv" data-value="dark" id="typedark">T</span>
+                                    <span class="weakness resetAdv" data-value="Dark" id="weaknessdark">W</span>
+                                </div>
+                                <div class="type-box">
+                                    <span class="typeweakness-name" id="electric">Electric</span>
+                                    <span class="type resetAdv" data-value="electric" id="typeelectric">T</span>
+                                    <span class="weakness resetAdv" data-value="Electric" id="weaknesselectric">W</span>
+                                </div>
+                                <div class="type-box">
+                                    <span class="typeweakness-name" id="fighting">Fighting</span>
+                                    <span class="type resetAdv" data-value="fighting" id="typefighting">T</span>
+                                    <span class="weakness resetAdv" data-value="Fighting" id="weaknessfighting">W</span>
+                                </div>
+                                <div class="type-box">
+                                    <span class="typeweakness-name" id="flying">Flying</span>
+                                    <span class="type resetAdv" data-value="flying" id="typeflying">T</span>
+                                    <span class="weakness resetAdv" data-value="Flying" id="weaknessflying">W</span>
+                                </div>
+                                <div class="type-box">
+                                    <span class="typeweakness-name" id="grass">Grass</span>
+                                    <span class="type resetAdv" data-value="grass" id="typegrass">T</span>
+                                    <span class="weakness resetAdv" data-value="Grass" id="weaknessgrass">W</span>
+                                </div>
+                                <div class="type-box">
+                                    <span class="typeweakness-name" id="ice">Ice</span>
+                                    <span class="type resetAdv" data-value="ice" id="typeice">T</span>
+                                    <span class="weakness resetAdv" data-value="Ice" id="weaknessice">W</span>
+                                </div>
+                                <div class="type-box">
+                                    <span class="typeweakness-name" id="poison">Poison</span>
+                                    <span class="type resetAdv" data-value="poison" id="typepoison">T</span>
+                                    <span class="weakness resetAdv" data-value="Poison" id="weaknesspoison">W</span>
+                                </div>
+                                <div class="type-box">
+                                    <span class="typeweakness-name" id="rock">Rock</span>
+                                    <span class="type resetAdv" data-value="rock" id="typerock">T</span>
+                                    <span class="weakness resetAdv" data-value="Rock" id="weaknessrock">W</span>
+                                </div>
+                                <div class="type-box">
+                                    <span class="typeweakness-name" id="water">Water</span>
+                                    <span class="type resetAdv" data-value="water" id="typewater">T</span>
+                                    <span class="weakness resetAdv" data-value="Water" id="weaknesswater">W</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advancedsearch-btn">
+                        <button class="hide-advsearch-btn"> Hide Advanced Search</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="likedPokemon-section">
+                <h2>Liked Pokemons</h2>
+            </div>
+
+            <div class="pokemon-section">
+                <!-- <div class="pokemon">
+                    <img src="" alt="">
+                    <p class="pokemonid">1234</p>
+                    <p class="tittle">qwerty</p>
+                    <p class="type">2345</p>
+                </div> -->
+
+
+            </div>
+            <div class="load-section">
+                <button class="load-more">Load More Pokemon</button>
+                <button class="collapse">collapse</button>
+                <button class="home-page">Back to Home page</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="pokemon-attributes">
+        <!-- <h2 id="pokemon-name">Name</h2>
+        <div class="pokemon-details">
+            <div class="img-section">
+                <img class="pokemonimg" src="pngegg.png" alt="">
+            </div>
+            <div class="info-section">
+                <h3 class="pokemon-id">Id: 1234</h3>
+                <h3 class="height">Height: 100</h3>
+                <h3 class="abilities">Abilities: test</h3>
+                <h3 class="weight">Weight: 99</h3>
+                <h3 class="pokemontype">Type: abc</h3>
+                <h3 class="Weakness">Weakness: abc</h3>
+
+            </div> -->
+        </div>
+
+<!--        
+            <div class="panel">
+                <form action="" method="post" class="inputs">
+                  <div class="inputs__item">
+                    <label for="previous-password" class="inputs__label">Previous password</label>
+                    <input type="password" class="inputs__input" id="previous-password"  />
+                  </div>
+                  <div class="inputs__item inputs__item--new">
+                    <label for="new-password" class="inputs__label">New password</label>
+                    <input type="password" class="inputs__input" id="new-password"  />
+                  </div>
+                  <div class="inputs__item inputs__item--new">
+                    <label for="new-password" class="inputs__label">Reenter New password</label>
+                    <input type="password" class="inputs__input" id="new-password"  />
+                  </div>
+                  <div class="inputs__item inputs__item--cta">
+                    <input type="submit" class="btn"  onclick="getValueNewpassword()" />
+                  </div>
+                </form>
+              </div> -->
+        
+
+
+
+
+    </div>
+
+    <script src="game-json.js"></script>
+    <script src="game21.js"></script>
+
+</body>
+
+</html>
